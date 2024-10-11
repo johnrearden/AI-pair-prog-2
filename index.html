@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Speed Test</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=Nunito:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style></style>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="bg-primary text-white text-center py-3">
+      <h1 class="mb-3">Typing Speed Test</h1>
+      <nav>
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link btn btn-grey text-dark" href="#instructions"
+              >Instructions</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container my-5">
+      <div class="row">
+        <div class="col-12 col-md-8">
+          <section id="home" class="mb-5">
+            <div class="input-group mb-3 w-80 w-md-50">
+              <span class="input-group-text" id="basic-addon1"
+                >Select Difficulty</span
+              >
+              <select id="difficultySelect" class="form-select" aria-label="Select Difficulty">
+                <option selected>Select Difficulty</option>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="difficult">Difficult</option>
+              </select>
+            </div>
+          </section>
+
+          <!-- Instructions -->
+          <section id="instructions" class="mb-5">
+            <p>Test your typing speed by typing the test shown below:</p>
+            <div class="mb-3">
+              <p
+                id="text-display"
+                class="form-control"
+                rows="1"
+                placeholder="Enter your name"
+              >
+                The quick brown fox jumps over the lazy dog. This sentence
+                contains every letter of the alphabet, making it a perfect
+                example for typing practice. By typing this sentence repeatedly,
+                you can improve your typing speed and accuracy. Remember to
+                focus on maintaining a steady rhythm and using the correct
+                finger placement on the keyboard. 
+              </p>
+            </div>
+            <div class="mb-3">
+              <textarea
+                id="multilineInput"
+                class="form-control"
+                rows="5"
+                placeholder="Click the start button to begin the test"
+              ></textarea>
+            </div>
+          </section>
+
+          <!-- Control Buttons -->
+          <section id="controls">
+            <div class="d-flex justify-content-center mb-3">
+              <button id="startButton" class="btn mx-2 btn-orange-outline">
+                Start
+              </button>
+              <button id="stopButton" class="btn mx-2 btn-orange-outline">
+                Stop
+              </button>
+              <button id="retryButton" class="btn mx-2 btn-orange-outline">
+                Retry
+              </button>
+            </div>
+          </section>
+        </div>
+
+        <div class="col-12 col-md-4 text-center">
+          <!-- Results -->
+          <section id="results" class="mb-5">
+            <h2>Results</h2>
+            <div>
+              <span>Level: &nbsp;</span>
+              <span id="level-display"></span>
+            </div>
+            <div>
+              <span>Time: &nbsp;</span>
+              <span id="time-display"></span>
+            </div>
+            <div>
+              <span>WPM: &nbsp;</span>
+              <span id="wpm-display"></span>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-light text-center py-3">
+      <p>&copy; 2023 Typing Speed Test. All rights reserved.</p>
+    </footer>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
